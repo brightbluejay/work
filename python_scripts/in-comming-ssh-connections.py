@@ -1,6 +1,7 @@
 # This script checks all AWS security groups for incoming SSH connections and exports the results to an Excel file.
 import boto3
-import pandas as pd
+import pandas as pd # `pip install pandas` if not installed
+
 def get_all_security_groups():
     ec2_client = boto3.client('ec2')
     response = ec2_client.describe_regions()
