@@ -1,4 +1,5 @@
-# This file is a script that retrieves a list of all Lambda functions in the eu-west-1 region that are using the Node.js 16.x runtime.
+# This file is a script that retrieves a list of all Lambda functions 
+# in the eu-west-1 region that are using the Node.js 16.x runtime.
 import boto3
 import csv
 import os
