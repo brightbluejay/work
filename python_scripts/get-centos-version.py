@@ -1,4 +1,5 @@
-# Get's the list of all EC2 instances in the AWS account and retrieves the CentOS version of each instance using the AWS Systems Manager (SSM) service.
+# Get's the list of all EC2 instances in the AWS account and retrieves 
+# the CentOS version of each instance using the AWS Systems Manager (SSM) service.
 
 import time
 import boto3
