@@ -21,7 +21,7 @@ def lambda_handler(event, context):
     #print(copy_source) #-uncomment to debug
     print("Copying %s from bucket %s to bucket %s ..." % (key, source_bucket, target_bucket))
     #s3.copy_object(Bucket=target_bucket+'/'+target_key, Key=key, CopySource=copy_source)
-    s3.copy_object(Bucket=target_bucket, Key=target_key + key, CopySource=copy_source)
+    s3.copy_object(Bucket=target_bucket, Key=target_key + '/' + key, CopySource=copy_source)
     
     return {
         'statusCode': 200,
